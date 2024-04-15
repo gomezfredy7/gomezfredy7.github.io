@@ -1,8 +1,10 @@
-:root,
+ /* global css variables don't work in iphone. Setting global variables at body level in index.html */
+ :root,
 :host,
 .sl-theme-light {
   color-scheme: light;
 
+    color-scheme: light;
   --sl-color-gray-50: hsl(0 0% 97.5%);
   --sl-color-gray-100: hsl(240 4.8% 95.9%);
   --sl-color-gray-200: hsl(240 5.9% 90%);
@@ -446,6 +448,7 @@
   --sl-z-index-toast: 950;
   --sl-z-index-tooltip: 1000;
 }
+
 
 @supports (scrollbar-gutter: stable) {
   .sl-scroll-lock {
