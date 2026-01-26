@@ -187,7 +187,7 @@ table.gridjs-table {
 
 td.gridjs-td {
   border: 1px solid #e5e7eb;
-  padding: 12px 24px;
+  padding: 2px;
   background-color: #fff;
   box-sizing: content-box;
 }
@@ -207,7 +207,7 @@ th.gridjs-th {
   background-color: #f9fafb;
   border: 1px solid #e5e7eb;
   border-top: none;
-  padding: 14px 24px;
+  padding: 2px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -278,7 +278,13 @@ th.gridjs-th:last-child {
   display: block;
   border-top-width: 1px;
   border-color: #e5e7eb;
+
+  td {
+    overflow: hidden;
+  }
 }
+
+.gridjs-wrapper td {overflow: hidden;}
 .gridjs-wrapper:nth-last-of-type(2) {
   border-radius: 8px;
   border-bottom-width: 1px;
