@@ -28,6 +28,7 @@
 }
 
 .gridjs-container {
+  width: auto !important;
   overflow: hidden;
   display: inline-block;
   padding: 2px;
@@ -170,8 +171,8 @@ button.gridjs-sort:focus {
 }
 
 table.gridjs-table {
-  width: 100%;
-  max-width: 100%;
+  width: auto;
+  max-width: auto;
   border-collapse: collapse;
   text-align: left;
   display: table;
